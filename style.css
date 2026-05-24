@@ -412,6 +412,14 @@ section {
   overflow: hidden;
 }
 
+/* slider inside a wide card fills full card height */
+.project-card--wide .project-img-slider {
+  aspect-ratio: unset;
+  min-height: unset;
+  height: 100%;
+  align-self: stretch;
+}
+
 .project-card {
   background: rgba(30,58,95,0.5);
   border: 1px solid rgba(100,255,218,0.08);
