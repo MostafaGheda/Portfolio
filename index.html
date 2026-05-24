@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mostafa Mahmoud Gheda — BI Developer & Data Analyst</title>
+  <title>Mostafa Mahmoud — BI Developer & Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -146,6 +146,37 @@
       </div>
     </div>
 
+    <!-- Grocery Sales DWH — wide card with thumbnail -->
+    <div class="project-card project-card--wide">
+      <div class="project-img-slider" data-images='["medallion_architecture.jpg"]'>
+        <div class="slider-track" onclick="openLightboxFromSlider(this)">
+          <img class="slider-img active" src="medallion_architecture.jpg" alt="Grocery Sales DWH Architecture"
+               onerror="this.closest('.project-img-slider').style.display='none'">
+        </div>
+        <div class="slider-dots" style="display:none">
+          <span class="dot active" onclick="goToSlide(this,0)"></span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-icon">🏪</div>
+        <h3 class="project-name">Grocery Sales DWH</h3>
+        <p class="project-desc">End-to-end ETL pipeline with medallion architecture and star schema design, SCD Type 1 &amp; 2 handling, and incremental loading strategy processing 7 million records with high performance and reliability.</p>
+        <div class="tech-badges">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">SQL</span>
+          <span class="tech-badge">SCD</span>
+          <span class="tech-badge">Star Schema</span>
+          <span class="tech-badge">ETL</span>
+        </div>
+        <div class="project-metrics">
+          <div class="pm-item"><span class="pm-val">7M+</span><span class="pm-lbl">Records</span></div>
+          <div class="pm-item"><span class="pm-val">SCD 1&amp;2</span><span class="pm-lbl">Handling</span></div>
+          <div class="pm-item"><span class="pm-val">Incremental</span><span class="pm-lbl">Loading</span></div>
+        </div>
+        <a href="https://github.com/MostafaGheda/Grocery-Sales-Pipeline" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+
     <!-- CRM Sales — with swappable images -->
     <div class="project-card project-card--wide">
       <div class="project-img-slider" data-images='["Capture 4.PNG","Capture 5.PNG","Capture 6.PNG"]'>
@@ -216,32 +247,6 @@
       </div>
     </div>
 
-    <!-- Grocery Sales DWH -->
-    <div class="project-card">
-      <div class="project-icon">🏪</div>
-      <h3 class="project-name">Grocery Sales DWH</h3>
-      <p class="project-desc">End-to-end ETL pipeline with star schema design, SCD Type 1 &amp; 2 handling, and incremental loading strategy processing 7 million records with high performance and reliability.</p>
-      <div class="tech-badges" style="margin-bottom:1.25rem">
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">SQL</span>
-        <span class="tech-badge">SCD</span>
-        <span class="tech-badge">Star Schema</span>
-      </div>
-      <a href="https://github.com/MostafaGheda/Grocery-Sales-Pipeline" target="_blank" class="project-link">View on GitHub →</a>
-    </div>
-
-    <!-- Uber Rides -->
-    <div class="project-card">
-      <div class="project-icon">🚗</div>
-      <h3 class="project-name">Uber Rides Analytics</h3>
-      <p class="project-desc">Python-powered analysis of 150K bookings generating $52M revenue. Deep-dive into cancellation patterns, peak demand windows, driver performance, and revenue optimization strategies.</p>
-      <div class="tech-badges" style="margin-bottom:1.25rem">
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">Pandas</span>
-        <span class="tech-badge">Matplotlib</span>
-        <span class="tech-badge">Seaborn</span>
-      </div>
-    </div>
 
   </div>
 </section>
